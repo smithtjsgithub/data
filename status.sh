@@ -4,6 +4,7 @@ declare -i _pics=0
 declare -i _blues=0
 declare -i _rap=0
 declare -i _itall=0
+declare -i _sitall=0
 clear
 echo "Front"
 for i in `cat /tmp/front.txt`
@@ -47,4 +48,4 @@ echo $_itall " "$i;done
 #echo "Total :" $_finalnum
 echo " "
 #_current=$(ps -ef | egrep -m 1 -i '/usr/bin/omxplayer.bin|"*.mp4"' | awk '{print $9}')
-ps -ef | egrep -m 1 -i '/usr/bin/omxplayer.bin|"*.mp4"' | awk '{print "On Screen Now: " $10}'
+#ps -ef | egrep -m 1 -i '/usr/bin/omxplayer.bin|"*.mp4"' | awk '{print "On Screen Now: " $10}'
